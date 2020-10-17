@@ -1,5 +1,5 @@
 <p align="center">
-Back to directory.
+Back to the last used directory when starting xonsh shell.
 </p>
 
 <p align="center">  
@@ -19,15 +19,23 @@ echo "xontrib load back2dir" > ~/.xonshrc
 
 ## Usage
 
-No additional actions needed. The xontrib just save the last used directory:
+No additional actions needed. The xontrib just save the latest directory:
 
 ```bash
 bash   ~     $ xonsh
 xonsh  ~     $ cd /etc
-xonsh  /etc  $ exit     # the last used directory is /etc
+xonsh  /etc  $ exit     # the latest directory is /etc
 
 bash   ~     $ xonsh
-xonsh  /etc  $ # last used directory
+xonsh  /etc  $ # the latest directory
+```
+
+If you run xonsh not from the `$HOME` directory the last directory will be ignored:
+
+```bash
+bash   ~     $ cd /tmp
+bash   /tmp  $ xonsh
+xonsh  /tmp  $ # latest directory ignored
 ```
 
 ## Credits
