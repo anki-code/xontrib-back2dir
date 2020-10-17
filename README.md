@@ -31,7 +31,7 @@ bash   ~     $ xonsh
 xonsh  /etc  $ # the latest directory
 ```
 
-If you run xonsh not from the `$HOME` directory the last directory will be ignored:
+If you run xonsh not from the `$HOME` directory the latest directory will be ignored:
 
 ```bash
 bash   ~     $ cd /tmp
