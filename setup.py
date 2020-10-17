@@ -9,14 +9,14 @@ except (IOError, OSError):
 
 setuptools.setup(
     name='xontrib-back2dir',
-    version='0.0.1',
+    version='0.0.2',
     license='MIT',
     author='anki-code',
     author_email='anki-code@no.no',
     description="Back to directory.",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    python_requires='>=3.5',
+    python_requires='>=3.6',
     install_requires=['xonsh'],
     packages=['xontrib'],
     package_dir={'xontrib': 'xontrib'},

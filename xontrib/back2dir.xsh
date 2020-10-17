@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from xonsh import dirstack
 
-$XONTRIB_BACK2DIR_FILE = Path(__xonsh__.env.get('XDG_CACHE_HOME', '~/.cache')).expanduser() / 'xontrib-back2dir' / 'last_dir'
+$XONTRIB_BACK2DIR_FILE = Path(__xonsh__.env.get('XDG_CACHE_HOME', '~/.cache')).expanduser() / 'xontrib-back2dir' / 'latest.path'
 
 if not $XONTRIB_BACK2DIR_FILE.parent.exists():
     mkdir -p @($XONTRIB_BACK2DIR_FILE.parent)
