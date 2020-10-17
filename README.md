@@ -19,7 +19,8 @@ echo "xontrib load back2dir" > ~/.xonshrc
 
 ## Usage
 
-No additional actions needed. The xontrib just save the latest directory:
+No additional actions needed. The xontrib just saves the latest directory and uses it when
+xonsh starts:
 
 ```bash
 bash   ~     $ xonsh
