@@ -1,5 +1,5 @@
 <p align="center">
-Back to the last used directory when starting xonsh shell.
+Back to the latest used directory when starting xonsh shell.
 </p>
 
 <p align="center">  
