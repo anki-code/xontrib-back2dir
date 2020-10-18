@@ -9,7 +9,7 @@ except (IOError, OSError):
 
 setuptools.setup(
     name='xontrib-back2dir',
-    version='0.0.3',
+    version='0.0.4',
     license='MIT',
     author='anki-code',
     author_email='anki-code@no.no',
@@ -20,7 +20,7 @@ setuptools.setup(
     install_requires=['xonsh'],
     packages=['xontrib'],
     package_dir={'xontrib': 'xontrib'},
-    package_data={'xontrib': ['*.xsh']},
+    package_data={'xontrib': ['*.py']},
     platforms='any',
     url='https://github.com/anki-code/xontrib-back2dir',
     project_urls={
