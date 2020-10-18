@@ -17,5 +17,6 @@ def autojump_add_to_database(olddir, newdir, **kwargs):
     _new_dir(newdir)
 
 if __xonsh__.env["PWD"] == __xonsh__.env["HOME"] and _file.exists():
-    newdir = open(_file).read()
+    with open(_file) as f:
+        newdir = f.read()
     dirstack.cd([newdir])
