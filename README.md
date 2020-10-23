@@ -39,6 +39,6 @@ bash   /tmp  $ xonsh
 xonsh  /tmp  $ # latest directory ignored
 ```
 
-## Credits
-
-This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
+## Links 
+* This package is the part of [ergopack](https://github.com/anki-code/xontrib-ergopack) - the pack of ergonomic xontribs.
+* This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
