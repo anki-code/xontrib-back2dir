@@ -9,7 +9,7 @@ except (IOError, OSError):
 
 setuptools.setup(
     name='xontrib-back2dir',
-    version='0.0.6',
+    version='0.0.8',
     license='MIT',
     author='anki-code',
     author_email='anki-code@no.no',
