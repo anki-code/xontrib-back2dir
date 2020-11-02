@@ -19,7 +19,7 @@ setuptools.setup(
     python_requires='>=3.6',
     packages=['xontrib'],
     package_dir={'xontrib': 'xontrib'},
-    package_data={'xontrib': ['*.py', '*.xsh']},
+    package_data={'xontrib': ['*.py']},
     platforms='any',
     url='https://github.com/anki-code/xontrib-back2dir',
     project_urls={
