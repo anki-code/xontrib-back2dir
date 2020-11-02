@@ -9,9 +9,7 @@ _file = Path(__xonsh__.env.get('XDG_CACHE_HOME', '~/.cache')).expanduser() / 'xo
 @events.on_post_init
 def on_post_init(**_):
     if __xonsh__.env["PWD"] == __xonsh__.env["HOME"] and _file.exists():
-        with open(_file) as f:
-            newdir = f.read()
-        cd @(newdir)
+        __xonsh__.subproc_captured_stdout(['cd', _file.read_text()])
 
 @events.on_chdir
 def autojump_add_to_database(olddir, newdir, **kwargs):
