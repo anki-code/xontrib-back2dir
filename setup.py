@@ -13,7 +13,7 @@ setuptools.setup(
     license='MIT',
     author='anki-code',
     author_email='anki-code@no.no',
-    description="Back to directory.",
+    description="Return to the most recently used directory when starting the xonsh shell.",
     long_description=long_description,
     long_description_content_type='text/markdown',
     python_requires='>=3.6',
