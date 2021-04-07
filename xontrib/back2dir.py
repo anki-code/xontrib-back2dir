@@ -9,10 +9,14 @@ _file = Path(__xonsh__.env.get('XDG_CACHE_HOME', '~/.cache')).expanduser() / 'xo
 @events.on_post_init
 def on_post_init(**_):
     if Path(__xonsh__.env["PWD"]) == Path(__xonsh__.env["HOME"]).resolve() and _file.exists():
-        __xonsh__.subproc_captured_stdout(['cd', _file.read_text()])
+        d = Path(_file.read_text().strip())
+        nd = d
+        while not nd.exists():
+            nd = nd.parent
+        __xonsh__.subproc_captured_stdout(['cd', str(nd)])
 
 @events.on_chdir
-def autojump_add_to_database(olddir, newdir, **kwargs):
+def _xontrib_back2dir(olddir, newdir, **kwargs):
     if not _file.parent.exists():
         os.mkdir(_file.parent)
     with open(_file, 'w') as f:
