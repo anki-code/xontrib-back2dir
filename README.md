@@ -3,7 +3,7 @@ Back to the latest used directory when starting xonsh shell.
 </p>
 
 <p align="center">  
-If you like the idea click ⭐ on the repo and stay tuned.
+If you like the idea click ⭐ on the repo and and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/anki-code/xontrib-back2dir" target="_blank">tweet</a>.
 </p>
 
 
