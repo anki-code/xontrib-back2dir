@@ -1,3 +1,5 @@
+"""Return to the most recently used directory when starting the xonsh shell. """
+
 from pathlib import Path
 from xonsh import dirstack
 
